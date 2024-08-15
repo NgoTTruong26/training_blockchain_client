@@ -8,7 +8,7 @@ export default function WalletOptions() {
     
 
     return connectors.map((connector, idx) => connector.icon &&(
-        <div key={idx}>
+        <div key={idx} className="flex justify-center">
         
         <Button size="lg" isLoading={isPending} key={connector.uid} onClick={() => {
             connect({ connector })}}
